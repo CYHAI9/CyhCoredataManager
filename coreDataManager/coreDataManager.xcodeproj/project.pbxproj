@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		32A0E8151F485DF800B89242 /* cyhCoredtaDB.m in Sources */ = {isa = PBXBuildFile; fileRef = 32A0E8141F485DF800B89242 /* cyhCoredtaDB.m */; };
 		CB831A731F4804D300298870 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CB831A721F4804D300298870 /* main.m */; };
 		CB831A761F4804D300298870 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CB831A751F4804D300298870 /* AppDelegate.m */; };
 		CB831A791F4804D300298870 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB831A781F4804D300298870 /* ViewController.m */; };
 		CB831A7C1F4804D300298870 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB831A7A1F4804D300298870 /* Main.storyboard */; };
 		CB831A7E1F4804D300298870 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB831A7D1F4804D300298870 /* Assets.xcassets */; };
 		CB831A811F4804D300298870 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB831A7F1F4804D300298870 /* LaunchScreen.storyboard */; };
-		CB831A8B1F48055D00298870 /* cyhCoredtaDB.m in Sources */ = {isa = PBXBuildFile; fileRef = CB831A8A1F48055D00298870 /* cyhCoredtaDB.m */; };
 		CB831A8E1F48098200298870 /* dataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CB831A8D1F48098200298870 /* dataModel.m */; };
 		CB831A911F48178D00298870 /* coredataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CB831A8F1F48178D00298870 /* coredataModel.xcdatamodeld */; };
 		CB831A961F48183A00298870 /* DataModel+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = CB831A931F48183A00298870 /* DataModel+CoreDataClass.m */; };
@@ -21,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		32A0E8131F485DF800B89242 /* cyhCoredtaDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cyhCoredtaDB.h; sourceTree = "<group>"; };
+		32A0E8141F485DF800B89242 /* cyhCoredtaDB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cyhCoredtaDB.m; sourceTree = "<group>"; };
 		CB831A6E1F4804D300298870 /* coreDataManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = coreDataManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB831A721F4804D300298870 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CB831A741F4804D300298870 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -31,8 +33,6 @@
 		CB831A7D1F4804D300298870 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CB831A801F4804D300298870 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CB831A821F4804D300298870 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CB831A891F48055D00298870 /* cyhCoredtaDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cyhCoredtaDB.h; sourceTree = "<group>"; };
-		CB831A8A1F48055D00298870 /* cyhCoredtaDB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cyhCoredtaDB.m; sourceTree = "<group>"; };
 		CB831A8C1F48098200298870 /* dataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dataModel.h; sourceTree = "<group>"; };
 		CB831A8D1F48098200298870 /* dataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = dataModel.m; sourceTree = "<group>"; };
 		CB831A901F48178D00298870 /* coredataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = coredataModel.xcdatamodel; sourceTree = "<group>"; };
@@ -53,6 +53,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		32A0E8121F485DF800B89242 /* CyhCoreDataManager */ = {
+			isa = PBXGroup;
+			children = (
+				32A0E8131F485DF800B89242 /* cyhCoredtaDB.h */,
+				32A0E8141F485DF800B89242 /* cyhCoredtaDB.m */,
+			);
+			path = CyhCoreDataManager;
+			sourceTree = "<group>";
+		};
 		CB831A651F4804D300298870 = {
 			isa = PBXGroup;
 			children = (
@@ -76,7 +85,7 @@
 				CB831A931F48183A00298870 /* DataModel+CoreDataClass.m */,
 				CB831A941F48183A00298870 /* DataModel+CoreDataProperties.h */,
 				CB831A951F48183A00298870 /* DataModel+CoreDataProperties.m */,
-				CB831A881F48052500298870 /* CyhCoreDataManager */,
+				32A0E8121F485DF800B89242 /* CyhCoreDataManager */,
 				CB831A741F4804D300298870 /* AppDelegate.h */,
 				CB831A751F4804D300298870 /* AppDelegate.m */,
 				CB831A771F4804D300298870 /* ViewController.h */,
@@ -99,15 +108,6 @@
 				CB831A721F4804D300298870 /* main.m */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		CB831A881F48052500298870 /* CyhCoreDataManager */ = {
-			isa = PBXGroup;
-			children = (
-				CB831A891F48055D00298870 /* cyhCoredtaDB.h */,
-				CB831A8A1F48055D00298870 /* cyhCoredtaDB.m */,
-			);
-			path = CyhCoreDataManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -184,10 +184,10 @@
 			files = (
 				CB831A791F4804D300298870 /* ViewController.m in Sources */,
 				CB831A8E1F48098200298870 /* dataModel.m in Sources */,
-				CB831A8B1F48055D00298870 /* cyhCoredtaDB.m in Sources */,
 				CB831A761F4804D300298870 /* AppDelegate.m in Sources */,
 				CB831A911F48178D00298870 /* coredataModel.xcdatamodeld in Sources */,
 				CB831A961F48183A00298870 /* DataModel+CoreDataClass.m in Sources */,
+				32A0E8151F485DF800B89242 /* cyhCoredtaDB.m in Sources */,
 				CB831A731F4804D300298870 /* main.m in Sources */,
 				CB831A971F48183A00298870 /* DataModel+CoreDataProperties.m in Sources */,
 			);
@@ -350,6 +350,7 @@
 				CB831A871F4804D300298870 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
