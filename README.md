@@ -1,0 +1,2 @@
+# CyhCoredataManager
+coredata
