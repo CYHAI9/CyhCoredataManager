@@ -3,6 +3,7 @@ pod 'CyhCoredataManager'
 
 1.创建一个数据库，名字是创建的coredata的文件名字
 [[cyhCoredtaDB coredataDBShare] createCoredataDB:@"coredataModel"];
+
 2.添加数据
 [cyhCoredtaDB inserDataWith_CoredatamodelClass:[DataModel class] CoredataModel:^(DataModel * model) {
         
@@ -12,6 +13,7 @@ pod 'CyhCoredataManager'
     } Error:^(NSError *error) {
        
     }];
+
 3.查询数据
 [cyhCoredtaDB selectDataWith_CoredatamoldeClass:[DataModel class] where:@"num = 100" Alldata_arr:^(NSArray *coredataModelArr) {
         
@@ -23,6 +25,7 @@ pod 'CyhCoredataManager'
     } Error:^(NSError *error) {
         
     }];
+
 4.更改数据
  [cyhCoredtaDB updataDataWith_CoredatamoldeClass:[DataModel class] where:@"num = 100" result:^(DataModel * model){
         
@@ -31,6 +34,7 @@ pod 'CyhCoredataManager'
     } Error:^(NSError *error) {
         
     }];
+
 5.删除数据
 [cyhCoredtaDB deleteDataWith_CoredatamoldeClass:[DataModel class] where:@"num = 100" result:^(BOOL isResult) {
         
