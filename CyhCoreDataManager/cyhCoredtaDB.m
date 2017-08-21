@@ -130,7 +130,9 @@ static cyhCoredtaDB * coredataDB;
         for (NSManagedObject *obj in datas)
         {
             [[cyhCoredtaDB coredataDBShare].context deleteObject:obj];
+            
         }
+        
         if (![[cyhCoredtaDB coredataDBShare].context save:&error])
         {
              isresult(NO);
@@ -144,7 +146,7 @@ static cyhCoredtaDB * coredataDB;
     resutError(error);
 }
 
-+ (void)updataDataWith_CoredatamoldeClass:(Class)modelclass where:(NSString *)whereStr result:(id (^)(id))Coredatamodel Error:(void (^)(NSError *))resutError
++ (void)updataDataWith_CoredatamoldeClass:(Class)modelclass where:(NSString *)whereStr result:(void (^)(id))Coredatamodel Error:(void (^)(NSError *))resutError
 {
 
     NSPredicate * pre = [NSPredicate predicateWithFormat:whereStr];
