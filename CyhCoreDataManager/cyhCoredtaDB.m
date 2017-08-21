@@ -65,7 +65,7 @@ static cyhCoredtaDB * coredataDB;
     
 }
 
-+ (void)inserDataWith_CoredatamodelClass:(Class)modelclass CoredataModel:(id (^)(id))Coredatamodel Error:(void (^)(NSError *))resutError
++ (void)inserDataWith_CoredatamodelClass:(Class)modelclass CoredataModel:(void (^)(id))Coredatamodel Error:(void (^)(NSError *))resutError
 {
     NSEntityDescription * classDescription = [NSEntityDescription entityForName:NSStringFromClass(modelclass) inManagedObjectContext:[cyhCoredtaDB coredataDBShare].context];
    id modelobject = [[modelclass alloc] initWithEntity:classDescription insertIntoManagedObjectContext:[cyhCoredtaDB coredataDBShare].context];
