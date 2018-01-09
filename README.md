@@ -1,5 +1,5 @@
 
-pod  'CyhCoredataManager'
+pod  'CyhCoreDataManager'
 
 1.创建一个数据库，名字是创建的coredata的文件名字
 [[cyhCoredtaDB coredataDBShare] createCoredataDB:@"coredataModel"];
