@@ -5,7 +5,7 @@ pod  'CyhCoreDataManager'
 [[cyhCoredtaDB coredataDBShare] createCoredataDB:@"coredataModel"];
 
 2.添加数据
-
+```
 [cyhCoredtaDB inserDataWith_CoredatamodelClass:[DataModel class] CoredataModel:^(DataModel * model) {
         
         model.num = model01.num;
@@ -14,7 +14,7 @@ pod  'CyhCoreDataManager'
     } Error:^(NSError *error) {
        
     }];
-
+```
 3.查询数据
 
 ```
